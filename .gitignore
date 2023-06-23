@@ -1,3 +1,9 @@
 test*.py
 token.json
 credentials.json
+deals.csv
+all-data.csv
+group_table.csv
+regs_data_orig/*
+regs_data_out/*
+.~lock.*
