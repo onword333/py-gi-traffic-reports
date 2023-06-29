@@ -92,6 +92,7 @@ def main():
 
   data_types = {
     'date_reg': 'string',
+    'gk_id': 'string',
     'имя воронки': 'string',
     'имя подрядчика': 'string',
     'канал': 'string',
@@ -107,7 +108,7 @@ def main():
   }
 
   # группируем полученные данные и суммируем значения
-  data = pd.read_csv(all_data_file_name, sep= ',', dtype = data_types, keep_default_na=False); #keep_default_na=False
+  data = pd.read_csv(all_data_file_name, sep= ',', dtype = data_types, keep_default_na=False, low_memory=False); #keep_default_na=False
 
   # если в рег. настройка файла десятичный разделитель определено как ",",
   # то делаем замену на точку "."
